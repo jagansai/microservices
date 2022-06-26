@@ -36,4 +36,9 @@ public class UserResource {
     public void removeUser(@RequestBody User user) {
         repo.delete(user);
     }
+
+    @GetMapping("/findByName")
+    public List<User> findByName( @RequestBody User user) {
+        return repo.findByName(user.getName() );
+    }
 }

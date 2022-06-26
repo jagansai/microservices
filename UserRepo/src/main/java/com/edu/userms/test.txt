@@ -2,6 +2,14 @@
 # display users
 http://localhost:8080/users
 
+# find by username
+GET http://localhost:8080/findByName  HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Vivek"
+}
+
 # Add user
 POST http://localhost:8080/users HTTP/1.1
 content-type: application/json
