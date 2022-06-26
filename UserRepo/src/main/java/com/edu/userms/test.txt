@@ -10,7 +10,7 @@ content-type: application/json
     "name" : "Saketh"
 }
 
-# Update user ( assuming the id of the user is 4.)
+# Update user ( assuming the id of the user is 5.)
 POST http://localhost:8080/users HTTP/1.1
 content-type: application/json
 
