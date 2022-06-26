@@ -1,0 +1,29 @@
+
+# display users
+http://localhost:8080/users
+
+# Add user
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Saketh"
+}
+
+# Update user ( assuming the id of the user is 4.)
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Pantula Saketh",
+    "id" : 5 
+}
+
+# delete the user.
+POST http://localhost:8080/removeUser HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "Pantula Saketh",
+    "id" : 5
+}
